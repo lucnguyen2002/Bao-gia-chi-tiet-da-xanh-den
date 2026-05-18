@@ -1,0 +1,1101 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <title>Tin Tức Đá Tự Nhiên - Thanh Thanh Tùng Stone</title> -->
+    <title>Thanh Thanh Tùng Stone</title>
+
+    <link rel="icon" type="image/png" href="image/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      /* RESET & CHUNG */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Roboto, Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        transition: 0.3s;
+      }
+      ul {
+        list-style: none;
+      }
+
+      /* HEADER STYLE - ĐÃ TỐI ƯU */
+      .minimal-header {
+        background: #ffffff;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+        height: 80px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+      }
+      .logo h1 {
+        font-size: 24px;
+        color: #fe7201; /* Màu cam thương hiệu */
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+
+      .header-right {
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+      }
+
+      .btn-call {
+        background: #fe7201;
+        color: #fff !important;
+        padding: 10px 20px;
+        border-radius: 50px; /* Bo tròn hiện đại */
+        font-weight: 700;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 4px 10px rgba(254, 114, 1, 0.2);
+      }
+      .btn-call:hover {
+        background: #e66701;
+        transform: translateY(-2px);
+      }
+
+      /* NỘI DUNG CHÍNH */
+      main {
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        margin: 20px auto;
+        max-width: 1200px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+      }
+
+      /* FOOTER STYLE */
+      .main-footer {
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 70px 0 20px;
+        margin-top: 50px;
+      }
+      .main-footer .container {
+        align-items: flex-start;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr; /* Chia cột đều hơn */
+        gap: 40px;
+      }
+      .footer-col h3 {
+        margin-bottom: 25px;
+        position: relative;
+        padding-bottom: 12px;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+      .footer-col h3::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: #fe7201;
+      }
+      .footer-col p {
+        font-size: 14px;
+        opacity: 0.8;
+        margin-bottom: 15px;
+      }
+      .footer-col ul li {
+        margin-bottom: 12px;
+      }
+      .footer-col ul li a {
+        font-size: 14px;
+        opacity: 0.8;
+      }
+      .footer-col ul li a:hover {
+        color: #fe7201;
+        opacity: 1;
+        padding-left: 8px;
+      }
+      .social-links {
+        margin-top: 25px;
+        display: flex;
+        gap: 15px;
+      }
+      .social-links a {
+        font-size: 18px;
+        background: rgba(255, 255, 255, 0.1);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+      .social-links a:hover {
+        background: #fe7201;
+      }
+      .footer-bottom {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 50px;
+        padding-top: 25px;
+        font-size: 13px;
+        opacity: 0.6;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .main-footer .container {
+          grid-template-columns: 1fr;
+        }
+        .btn-call span {
+          display: none; /* Ẩn chữ trên mobile cho gọn */
+        }
+        .logo h1 {
+          font-size: 18px;
+        }
+      }
+      /* ------------------------------------------------------------------------------------------------------------ */
+    </style>
+  </head>
+  <body>
+    <header class="minimal-header">
+      <div class="container">
+        <div class="logo">
+          <a href="https://thanhthanhtungstone.com/">
+            <h1>THANH THANH TÙNG STONE</h1>
+          </a>
+        </div>
+        <div class="header-right">
+          <a href="tel:0979298888" class="btn-call">
+            <i class="fa fa-phone"></i> <span>097 929 8888</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- NỘI DUNG CHÍNH (MAIN) -->
+    <main
+      style="
+        background: transparent;
+        box-shadow: none;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+      "
+    >
+      <article
+        style="
+          background: #ffffff;
+          padding: 40px;
+          border-radius: 12px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        "
+      >
+        <!-- Tiêu đề bài viết -->
+        <h1
+          style="
+            font-size: 28px;
+            color: #2c3e50;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            font-weight: 800;
+          "
+        >
+          🏛️ Cập Nhật Báo Giá Đá Xanh Đen Thanh Hóa Lát Sân Vườn Mới Nhất 2026
+        </h1>
+
+        <!-- Sapo / Đoạn mở đầu -->
+        <p
+          style="
+            font-size: 16px;
+            color: #4a5568;
+            margin-bottom: 15px;
+            text-align: justify;
+          "
+        >
+          Trong xu hướng thiết kế kiến trúc cảnh quan hiện đại năm 2026,
+          <a
+            href="https://thanhthanhtungstone.com/da-xanh-den-thanh-hoa"
+            style="color: #16a085; text-decoration: none; font-weight: bold"
+            >đá xanh đen Thanh Hóa</a
+          >
+          vẫn giữ vững vị thế là dòng đá tự nhiên quốc dân được săn đón hàng
+          đầu. Sở hữu sắc trầm mạnh mẽ, độ cứng vượt trội cùng khả năng chống
+          chịu thời tiết khắc nghiệt, loại đá này là giải pháp hoàn hảo để nâng
+          tầm đẳng cấp cho các hạng mục ngoại thất từ biệt thự, resort cho đến
+          các công trình công cộng.
+        </p>
+        <p
+          style="
+            font-size: 16px;
+            color: #4a5568;
+            margin-bottom: 20px;
+            text-align: justify;
+          "
+        >
+          Bài viết dưới đây từ Thanh Thanh Tùng Stone sẽ cung cấp cho quý khách
+          hàng, chủ đầu tư cái nhìn toàn diện về đặc điểm, tính ứng dụng và bảng
+          báo giá đá xanh đen Thanh Hóa mới nhất năm 2026.
+        </p>
+
+        <!-- Bài viết liên quan -->
+        <p style="font-size: 15px; margin-bottom: 30px; font-style: italic">
+          🔗 Xem thêm bài viết liên quan:
+          <a
+            href="https://thanhthanhtungstone.com/tin-tuc/bao-gia-da-xanh-thanh-hoa-lat-nen-dep-nhat-hien-nay"
+            style="color: #fe7201; font-weight: 600; text-decoration: underline"
+            >[Báo giá chi tiết đá xanh rêu Thanh Hóa 2026]</a
+          >
+        </p>
+
+        <!-- Phần 1 -->
+        <h2
+          style="
+            font-size: 20px;
+            color: #2c3e50;
+            border-left: 4px solid #fe7201;
+            padding-left: 12px;
+            margin: 30px 0 15px;
+            font-weight: 700;
+          "
+        >
+          1. Những Ưu Điểm Tạo Nên Giá Trị Của Đá Xanh Đen Thanh Hóa 🌿
+        </h2>
+        <p
+          style="
+            font-size: 16px;
+            color: #4a5568;
+            margin-bottom: 15px;
+            text-align: justify;
+          "
+        >
+          Không phải ngẫu nhiên mà dòng đá khai thác từ các mỏ đá tự nhiên Thanh
+          Hóa lại được các kiến trúc sư ưu ái đến vậy. Sản phẩm hội tụ những
+          điểm cộng đắt giá:
+        </p>
+        <ul style="list-style: none; padding-left: 0; margin-bottom: 20px">
+          <li
+            style="
+              margin-bottom: 12px;
+              font-size: 16px;
+              color: #4a5568;
+              text-align: justify;
+            "
+          >
+            <strong style="color: #2c3e50"
+              >🎨 Sắc xanh đen sang trọng, thời thượng:</strong
+            >
+            Tông màu trầm tối mang nét đẹp mộc mạc nhưng cực kỳ lôi cuốn. Khi
+            gặp nước mưa, đá sẽ chuyển sang màu đen thẫm bóng bẩy, tạo nên hiệu
+            ứng thị giác tuyệt đẹp cho sân vườn.
+          </li>
+          <li
+            style="
+              margin-bottom: 12px;
+              font-size: 16px;
+              color: #4a5568;
+              text-align: justify;
+            "
+          >
+            <strong style="color: #2c3e50"
+              >💪 Kết cấu đá già, chịu lực cực tốt:</strong
+            >
+            Trải qua hàng triệu năm kiến tạo địa chất, đá có mật độ vật chất đặc
+            khít, không lo rạn nứt hay om vỡ trước áp lực tải trọng của xe ô tô
+            ra vào hàng ngày.
+          </li>
+          <li
+            style="
+              margin-bottom: 12px;
+              font-size: 16px;
+              color: #4a5568;
+              text-align: justify;
+            "
+          >
+            <strong style="color: #2c3e50"
+              >🚶 Chống trơn trượt tuyệt đối:</strong
+            >
+            Thông qua các phương pháp chế tác bề mặt như băm mặt, khò lửa hay
+            mài nhám, đá tạo độ ma sát cao, bảo vệ an toàn cho các thành viên
+            trong gia đình khi di chuyển vào mùa mưa.
+          </li>
+          <li
+            style="
+              margin-bottom: 12px;
+              font-size: 16px;
+              color: #4a5568;
+              text-align: justify;
+            "
+          >
+            <strong style="color: #2c3e50"
+              >🧽 Kháng rêu mốc, dễ dàng lau chùi:</strong
+            >
+            Đá xanh đen tự nhiên có độ thấm hút nước cực thấp, ngăn chặn sự phát
+            triển của vi khuẩn và rêu mốc, giúp mặt sân luôn sạch sẽ, giữ nguyên
+            vẻ đẹp như mới.
+          </li>
+        </ul>
+
+        <!-- Khung chứa ảnh 1 -->
+        <img
+          src="image/xanh-den-mai-hone-ca-vien.jpg"
+          alt="Đá sọc dưa tự nhiên"
+          style="width: 100%; border-radius: 8px"
+        />
+
+        <!-- Phần 2 -->
+        <h2
+          style="
+            font-size: 20px;
+            color: #2c3e50;
+            border-left: 4px solid #fe7201;
+            padding-left: 12px;
+            margin: 35px 0 15px;
+            font-weight: 700;
+          "
+        >
+          2. Lợi Ích Lâu Dài Khi Lựa Chọn Đá Xanh Đen Lát Sân ✅
+        </h2>
+        <p
+          style="
+            font-size: 16px;
+            color: #4a5568;
+            margin-bottom: 15px;
+            text-align: justify;
+          "
+        >
+          Việc đầu tư đá tự nhiên Thanh Hóa ngay từ đầu mang lại cho gia chủ
+          những giá trị kinh tế và thẩm mỹ bền vững:
+        </p>
+        <ul style="list-style: none; padding-left: 0; margin-bottom: 20px">
+          <li
+            style="
+              margin-bottom: 12px;
+              font-size: 16px;
+              color: #4a5568;
+              text-align: justify;
+            "
+          >
+            <strong style="color: #2c3e50">✨ Nâng tầm không gian sống:</strong>
+            Sắc xanh đen dễ dàng hòa quyện cùng mảng xanh của cây cối, tiểu
+            cảnh, tạo nên một tổng thể kiến trúc ngoại thất hài hòa, bề thế.
+          </li>
+          <li
+            style="
+              margin-bottom: 12px;
+              font-size: 16px;
+              color: #4a5568;
+              text-align: justify;
+            "
+          >
+            <strong style="color: #2c3e50"
+              >⏳ Tuổi thọ thách thức thời gian:</strong
+            >
+            Khác với gạch men dễ bong tróc hay đá nhân tạo nhanh bợt màu, đá
+            xanh đen càng dùng lâu càng lì, càng lên nước đá đẹp.
+          </li>
+          <li
+            style="
+              margin-bottom: 12px;
+              font-size: 16px;
+              color: #4a5568;
+              text-align: justify;
+            "
+          >
+            <strong style="color: #2c3e50">💰 Tối ưu chi phí bảo dưỡng:</strong>
+            Nhờ độ bền vĩnh cửu, chủ nhà hầu như không phải tốn thêm chi phí sửa
+            chữa, sụt lún hay thay thế nền sân trong suốt hàng chục năm sử dụng.
+          </li>
+        </ul>
+
+        <!-- Khung chứa ảnh 2 -->
+        <img
+          src="image/ct-30x30-1.jpg"
+          alt="Đá sọc dưa tự nhiên"
+          style="width: 100%; border-radius: 8px"
+        />
+
+        <!-- Phần 3 -->
+        <h2
+          style="
+            font-size: 20px;
+            color: #2c3e50;
+            border-left: 4px solid #fe7201;
+            padding-left: 12px;
+            margin: 35px 0 15px;
+            font-weight: 700;
+          "
+        >
+          3. Bảng Báo Giá Đá Xanh Đen Thanh Hóa Mới Nhất 2026 📋
+        </h2>
+        <p
+          style="
+            font-size: 16px;
+            color: #4a5568;
+            margin-bottom: 20px;
+            text-align: justify;
+          "
+        >
+          Mức giá của đá xanh đen Thanh Hóa thực tế sẽ dao động tùy thuộc vào
+          quy cách kích thước (30x30, 30x60, 40x40cm...), độ dày phôi đá (2cm,
+          3cm, 5cm) cũng như khối lượng đặt hàng và vị trí vận chuyển.
+        </p>
+        <p
+          style="
+            font-size: 16px;
+            color: #4a5568;
+            margin-bottom: 15px;
+            text-align: justify;
+          "
+        >
+          Dưới đây là bảng giá tham khảo tại xưởng Thanh Thanh Tùng Stone năm
+          2026:
+        </p>
+
+        <!-- Bảng báo giá -->
+        <div style="overflow-x: auto; margin-bottom: 20px">
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              min-width: 500px;
+              font-size: 15px;
+            "
+          >
+            <thead>
+              <tr
+                style="
+                  background-color: #2c3e50;
+                  color: #ffffff;
+                  text-align: left;
+                "
+              >
+                <th
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                    width: 60px;
+                  "
+                >
+                  STT
+                </th>
+                <th style="padding: 12px; border: 1px solid #ddd">
+                  Phân Loại Sản Phẩm
+                </th>
+                <th
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: right;
+                  "
+                >
+                  Đơn Giá Tham Khảo (đ/m²)
+                </th>
+                <th
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                    width: 100px;
+                  "
+                >
+                  Đơn Vị Tính
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background-color: #f9f9f9">
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                  "
+                >
+                  1
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    font-weight: 500;
+                  "
+                >
+                  Đá xanh đen mài hone / mài mịn
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: right;
+                    color: #fe7201;
+                    font-weight: bold;
+                  "
+                >
+                  330.000 – 435.000
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                  "
+                >
+                  m²
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                  "
+                >
+                  2
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    font-weight: 500;
+                  "
+                >
+                  Đá xanh đen băm mặt toàn phần
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: right;
+                    color: #fe7201;
+                    font-weight: bold;
+                  "
+                >
+                  330.000 – 435.000
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                  "
+                >
+                  m²
+                </td>
+              </tr>
+              <tr style="background-color: #f9f9f9">
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                  "
+                >
+                  3
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    font-weight: 500;
+                  "
+                >
+                  Đá xanh đen băm mặt trừ viền
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: right;
+                    color: #fe7201;
+                    font-weight: bold;
+                  "
+                >
+                  345.000 – 450.000
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                  "
+                >
+                  m²
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                  "
+                >
+                  4
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    font-weight: 500;
+                  "
+                >
+                  Đá cubic xanh đen cắt thô
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: right;
+                    color: #fe7201;
+                    font-weight: bold;
+                  "
+                >
+                  670.000 – 880.000
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                  "
+                >
+                  m²
+                </td>
+              </tr>
+              <tr style="background-color: #f9f9f9">
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                  "
+                >
+                  5
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    font-weight: 500;
+                  "
+                >
+                  Đá cubic xanh đen băm mặt (10x10x5 cm)
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: right;
+                    color: #fe7201;
+                    font-weight: bold;
+                  "
+                >
+                  730.000 – 910.000
+                </td>
+                <td
+                  style="
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                  "
+                >
+                  m²
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p
+          style="
+            font-size: 15px;
+            color: #718096;
+            font-style: italic;
+            margin-bottom: 25px;
+            text-align: justify;
+          "
+        >
+          📌 Lưu ý: Bảng giá trên mang tính chất tham khảo tại thời điểm hiện
+          tại. Đối với các đơn hàng dự án số lượng lớn hoặc quy cách cắt theo
+          bản vẽ riêng, quý khách vui lòng liên hệ hotline trực tiếp để nhận
+          chính sách chiết khấu tốt nhất.
+        </p>
+
+        <!-- Khung chứa ảnh 3 -->
+        <img
+          src="image/xanh-den-ct-4.jpg"
+          alt="Đá sọc dưa tự nhiên"
+          style="width: 100%; border-radius: 8px"
+        />
+
+        <!-- Phần 4 -->
+        <h2
+          style="
+            font-size: 20px;
+            color: #2c3e50;
+            border-left: 4px solid #fe7201;
+            padding-left: 12px;
+            margin: 35px 0 15px;
+            font-weight: 700;
+          "
+        >
+          4. Các Hạng Mục Ứng Dụng Phổ Biến 🏗️
+        </h2>
+        <p
+          style="
+            font-size: 16px;
+            color: #4a5568;
+            margin-bottom: 15px;
+            text-align: justify;
+          "
+        >
+          Nhờ tính đa năng và độ bền bỉ cao, đá xanh đen Thanh Hóa xuất hiện dày
+          đặc tại các hạng mục:
+        </p>
+        <ul style="list-style: none; padding-left: 0; margin-bottom: 25px">
+          <li
+            style="
+              margin-bottom: 10px;
+              font-size: 16px;
+              color: #4a5568;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            "
+          >
+            <span style="color: #fe7201">✔</span> 🌳 Lát nền sân sảnh biệt thự,
+            resort, khu đô thị sinh thái.
+          </li>
+          <li
+            style="
+              margin-bottom: 10px;
+              font-size: 16px;
+              color: #4a5568;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            "
+          >
+            <span style="color: #fe7201">✔</span> 🚶 Làm đá lát lối đi dạo, vỉa
+            hè, hành lang sân vườn.
+          </li>
+          <li
+            style="
+              margin-bottom: 10px;
+              font-size: 16px;
+              color: #4a5568;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            "
+          >
+            <span style="color: #fe7201">✔</span> 🪜 Ốp lát bậc tam cấp, bậc
+            thang ngoài trời chịu lực.
+          </li>
+          <li
+            style="
+              margin-bottom: 10px;
+              font-size: 16px;
+              color: #4a5568;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            "
+          >
+            <span style="color: #fe7201">✔</span> 💧 Lát khu vực xung quanh hồ
+            bơi, tiểu cảnh non bộ.
+          </li>
+          <li
+            style="
+              margin-bottom: 10px;
+              font-size: 16px;
+              color: #4a5568;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            "
+          >
+            <span style="color: #fe7201">✔</span> ⛩️ Ốp lát các công trình kiến
+            trúc tâm linh, nhà thờ họ, đình chùa.
+          </li>
+        </ul>
+
+        <!-- Khung chứa ảnh 4 -->
+        <img
+          src="image/ct-xanh-den-2.jpg"
+          alt="Đá sọc dưa tự nhiên"
+          style="width: 100%; border-radius: 8px"
+        />
+
+        <!-- Phần 5 -->
+        <h2
+          style="
+            font-size: 20px;
+            color: #2c3e50;
+            border-left: 4px solid #fe7201;
+            padding-left: 12px;
+            margin: 35px 0 15px;
+            font-weight: 700;
+          "
+        >
+          5. Tại Sao Nên Chọn Mua Đá Tại Thanh Thanh Tùng Stone? ⭐
+        </h2>
+        <p
+          style="
+            font-size: 16px;
+            color: #4a5568;
+            margin-bottom: 15px;
+            text-align: justify;
+          "
+        >
+          Giữa hàng trăm đơn vị cung cấp trên thị trường, Thanh Thanh Tùng Stone
+          tự hào là địa chỉ tin cậy được hàng ngàn nhà thầu và gia chủ lựa chọn
+          nhờ:
+        </p>
+        <ul style="list-style: none; padding-left: 0; margin-bottom: 30px">
+          <li
+            style="
+              margin-bottom: 12px;
+              font-size: 16px;
+              color: #4a5568;
+              text-align: justify;
+              padding-left: 15px;
+              position: relative;
+            "
+          >
+            <span style="position: absolute; left: 0; color: #fe7201">•</span>
+            <strong style="color: #2c3e50">Nguồn gốc rõ ràng:</strong> 100% phôi
+            đá được khai thác từ các mỏ đá tự nhiên gia tuổi nhất tại Thanh Hóa.
+          </li>
+          <li
+            style="
+              margin-bottom: 12px;
+              font-size: 16px;
+              color: #4a5568;
+              text-align: justify;
+              padding-left: 15px;
+              position: relative;
+            "
+          >
+            <span style="position: absolute; left: 0; color: #fe7201">•</span>
+            <strong style="color: #2c3e50">Năng lực sản xuất lớn:</strong> Hệ
+            thống nhà xưởng máy móc hiện đại, đáp ứng nhanh chóng tiến độ các dự
+            án B2B số lượng lớn.
+          </li>
+          <li
+            style="
+              margin-bottom: 12px;
+              font-size: 16px;
+              color: #4a5568;
+              text-align: justify;
+              padding-left: 15px;
+              position: relative;
+            "
+          >
+            <span style="position: absolute; left: 0; color: #fe7201">•</span>
+            <strong style="color: #2c3e50">Gia công tinh xảo:</strong> Đội ngũ
+            thợ lành nghề, cắt quy cách chuẩn chỉnh, bo cạnh, cà viền tỉ mỉ từng
+            viên.
+          </li>
+          <li
+            style="
+              margin-bottom: 12px;
+              font-size: 16px;
+              color: #4a5568;
+              text-align: justify;
+              padding-left: 15px;
+              position: relative;
+            "
+          >
+            <span style="position: absolute; left: 0; color: #fe7201">•</span>
+            <strong style="color: #2c3e50">Giá gốc tận xưởng:</strong> Không qua
+            trung gian, mang lại lợi ích kinh tế tốt nhất cho khách hàng.
+          </li>
+        </ul>
+
+        <!-- Kết luận -->
+        <h2
+          style="
+            font-size: 20px;
+            color: #2c3e50;
+            border-left: 4px solid #fe7201;
+            padding-left: 12px;
+            margin: 35px 0 15px;
+            font-weight: 700;
+          "
+        >
+          Kết Luận 🔎
+        </h2>
+        <p
+          style="
+            font-size: 16px;
+            color: #4a5568;
+            margin-bottom: 15px;
+            text-align: justify;
+          "
+        >
+          Đá xanh đen Thanh Hóa chính là mảnh ghép hoàn hảo để hoàn thiện vẻ đẹp
+          kiến trúc ngoại thất vững chãi bền lâu cho công trình của bạn. Đừng
+          ngần ngại đầu tư một lần để nhận lại giá trị thẩm mỹ trường tồn mãi về
+          sau.
+        </p>
+        <p
+          style="
+            font-size: 16px;
+            color: #4a5568;
+            margin-bottom: 30px;
+            text-align: justify;
+          "
+        >
+          Quý khách hàng có nhu cầu tư vấn kích thước phong thủy, chọn mẫu đá
+          thực tế hoặc nhận báo giá ưu đãi chính xác nhất cho công trình của
+          mình, hãy liên hệ ngay với Thanh Thanh Tùng Stone hôm nay:
+        </p>
+
+        <!-- Khung thông tin liên hệ cuối bài -->
+        <div
+          style="
+            background: #f8fafc;
+            border-top: 3px solid #fe7201;
+            padding: 25px;
+            border-radius: 0 0 8px 8px;
+            font-size: 16px;
+            color: #2c3e50;
+          "
+        >
+          <p
+            style="
+              margin-bottom: 10px;
+              font-weight: bold;
+              font-size: 18px;
+              color: #fe7201;
+            "
+          >
+            🏛️ CÔNG TY CỔ PHẦN THANH THANH TÙNG
+          </p>
+          <p style="margin-bottom: 8px">
+            🔗 <strong>Website:</strong>
+            <a
+              href="https://thanhthanhtungstone.com/"
+              style="color: #2c3e50; text-decoration: underline"
+              >thanhthanhtungstone.com</a
+            >
+          </p>
+          <p style="margin-bottom: 8px">
+            📞 <strong>Hotline trực xưởng 24/7:</strong>
+            <a href="tel:0979298888" style="color: #fe7201; font-weight: bold"
+              >097 929 8888</a
+            >
+          </p>
+          <p style="margin-bottom: 0">
+            📥 <strong>Địa chỉ tổng kho:</strong> 228, đường Trịnh Huy Quang,
+            phường Đông Quang, Tỉnh Thanh Hóa
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-col">
+          <h3>Về Chúng Tôi</h3>
+          <p>
+            Thanh Thanh Tùng Stone chuyên cung cấp và thi công các dòng đá tự
+            nhiên cao cấp cho các dự án resort và hạ tầng đô thị trọng điểm trên
+            toàn quốc.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/thanhthanhtungstone/"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UC8E7mggj7YxDRduZHAtw1xw"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Sản Phẩm Chính</h3>
+          <ul>
+            <li>
+              <a href="https://thanhthanhtungstone.com/chat-lieu/da-xanh-den"
+                >Đá xanh đen</a
+              >
+            </li>
+            <li>
+              <a href="https://thanhthanhtungstone.com/chat-lieu/da-xanh-reu"
+                >Đá xanh rêu</a
+              >
+            </li>
+            <li>
+              <a href="https://thanhthanhtungstone.com/chat-lieu/da-bazan"
+                >Đá bazan</a
+              >
+            </li>
+            <li>
+              <a href="https://thanhthanhtungstone.com/chat-lieu/da-soc-dua"
+                >Đá sọc dưa</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://thanhthanhtungstone.com/chat-lieu/da-marble-tu-nhien"
+                >Đá marble</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Liên Hệ</h3>
+          <p>
+            <i class="fa fa-map-marker-alt"></i> 228, đường Trịnh Huy Quang,
+            phường Đông Quang, Tỉnh Thanh Hóa
+          </p>
+          <p><i class="fa fa-phone"></i> 097 929 8888</p>
+          <p><i class="fa fa-envelope"></i> thanhthanhtungstones@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Thanh Thanh Tùng Stone.</p>
+      </div>
+    </footer>
+  </body>
+</html>
